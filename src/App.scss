@@ -1,0 +1,52 @@
+@import 'antd/dist/antd.css';
+
+body {
+    background: rgb(154, 48, 100);
+    background: linear-gradient(145deg, rgba(154, 48, 100, 1) 0%, rgba(69, 69, 209, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    max-height: calc(calc(var(--vh, 1vh) * 100) - 200px);
+    background-color: #151825;
+    border-radius: 5px;
+    margin: 100px 0;
+}
+
+.content {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    &__header {
+        margin: 0;
+        font-size: 36px;
+        color: white;
+    }
+
+    &__input {
+        width: 400px;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 706px) {
+    .container {
+        margin: 20px 0;
+        max-height: calc(calc(var(--vh, 1vh) * 100) - 40px);
+    };
+
+    .content {
+        &__header {
+            font-size: 20px;
+        }
+
+        &__input {
+            width: 280px;
+        }
+    }
+}

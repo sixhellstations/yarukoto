@@ -1,0 +1,50 @@
+.todo-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    background: rgb(255,95,95);
+    background: linear-gradient(90deg, rgba(255,95,95,1) 0%, rgba(252,176,69,1) 100%);
+    border-radius: 5px;
+    flex-shrink: 0;
+
+    
+    &__container {
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        margin: 5px 5px;
+        flex-shrink: 0;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__text {
+        margin-left: 10px;
+        margin-right: auto;
+    }
+
+    &__buttons {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    &-buttons {
+        &__button {
+            cursor: pointer;
+            border: 0;
+            outline: 0;
+            background: transparent;
+            border: 1px solid transparent;
+            transition: all .3s ease-in-out;
+            border-radius: 5px;
+
+            &:hover {
+                border: 1px solid white;
+            }
+        }
+    }
+}

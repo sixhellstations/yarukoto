@@ -1,0 +1,31 @@
+.input-group {
+    width: 100%;
+    height: 40px;
+    display: flex;
+
+    input {
+        width: 100%;
+        border-radius: 5px 0 0 5px;
+        background: transparent;
+        border: 2px solid #643da9;
+        padding: 10px;
+        transition: all .2s ease-in-out;
+
+        &:focus {
+            outline: none;
+            border-color: #431c87;
+        }
+    }
+
+    button {
+        border: 0;
+        border-radius: 0 5px 5px 0;
+        background-color: #643da9;
+        transition: all .2s ease-in-out;
+
+        &:focus {
+            outline: none;
+            background-color: #431c87;
+        }
+    }
+}
